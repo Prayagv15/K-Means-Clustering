@@ -1,0 +1,14 @@
+Silhouette refers to a method of interpretation and validation of consistency within clusters of data. The technique provide a succinct graphical representation of how well each pobject has been classified.
+
+The Silhouette value is a measure of how similar an object is to its own cluster (cohesion) compare to the other clusters (separation). The Silhouette ranges from -1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighbouring clusters. If most objects have a high value, thenthe clustering configuration is appropriate. If many points have a low or negativevalue, then the clustering configuration may have too many or too few clusters.
+
+The silhouette can be calculated with any distance metric, such as the Euclidenan distance or the Manhattan distance.
+
+Assume the data have been clustered via technique, k-mediods or k-means, into k clusters.
+
+For each data point **i** in the cluster C we have,
+    a(i), is the mean distance between i and all other data points in the same cluster. We can interpret a(i) as a measure for how well **i** is assigned to it's cluster (the smaller the value, the better the assignment).
+
+
+The Silhouette(value) of one data point i, s(i):
+        where, s(i) lies between -1 and 1.
